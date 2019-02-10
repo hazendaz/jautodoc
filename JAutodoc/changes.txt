@@ -1,5 +1,8 @@
 Changes for JAutodoc
 
+* 2019-02-04 Version 1.15.0
+      o Mavenized project
+
 * 2016-06-19 Version 1.14.0
       o Improvements on name splitting with support for digits
       o Bugfix for import all preferences
