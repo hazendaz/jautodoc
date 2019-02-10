@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="JAutodoc" url="http://jautodoc.sourceforge.net/update/">
+      JAutodoc Update Site
+   </description>
+   <feature url="features/net.sf.jautodoc.feature_1.15.0.jar" id="net.sf.jautodoc.feature" version="1.15.0">
+      <category name="JAutodoc"/>
+   </feature>
+   <archive path="plugins/net.sf.jautodoc_1.15.0.jar" url="http://sourceforge.net/projects/jautodoc/files/updatesite/1.15.0/net.sf.jautodoc_1.15.0.jar/download"/>
+   <archive path="plugins/net.sf.jautodoc.velocity_1.15.0.jar" url="http://sourceforge.net/projects/jautodoc/files/updatesite/1.15.0/net.sf.jautodoc.velocity_1.15.0.jar/download"/>
+   <category-def name="JAutodoc" label="JAutodoc"/>
+</site>
