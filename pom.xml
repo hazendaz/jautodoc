@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.hazendaz</groupId>
+        <artifactId>base-parent</artifactId>
+        <version>21</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.github.hazendaz.jautodoc</groupId>
+    <artifactId>jautodoc-parent</artifactId>
+    <version>1.15.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>jautodoc-parent</name>
+    <description>Provides support for writing Javadoc.</description>
+    <url>https://github.com/hazendaz/jautodoc</url>
+    <licenses>
+        <license>
+            <name>Eclipse Public License - v 1.0</name>
+            <url>http://www.eclipse.org/legal/epl-v10.html</url>
+            <distribution>manual</distribution>
+        </license>
+    </licenses>
+
+    <prerequisites>
+        <maven>3.1.1</maven>
+    </prerequisites>
+
+    <scm>
+        <url>https://github.com/hazendaz/jautodoc</url>
+        <connection>scm:git:ssh://github.com/hazendaz/jautodoc.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/hazendaz/jautodoc.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issue Management</system>
+        <url>https://github.com/hazendaz/jautodoc/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Travis CI</system>
+        <url>https://travis-ci.org/hazendaz/jautodoc</url>
+    </ciManagement>
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <name>GitHub Pages</name>
+            <url>github:https://hazendaz.github.io/jautodoc/</url>
+        </site>
+    </distributionManagement>
+
+    <modules>
+        <module>jautodoc</module>
+        <module>jautodoc-ant</module>
+        <!-- TODO: <module>jautodoc-feature</module> -->
+        <!-- TODO: <module>jautodoc-update-site</module> -->
+        <module>jautodoc-velocity</module>
+    </modules>
+
+    <properties>
+        <!-- Relax we don't need to enforce Java 8 at this time. -->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.testSource>1.7</maven.compiler.testSource>
+        <maven.compiler.testTarget>1.7</maven.compiler.testTarget>
+
+        <signature.artifact>java17</signature.artifact>
+
+        <!-- Checkstyle -->
+        <checkstyle.config>checkstyle-4space.xml</checkstyle.config>
+    </properties>
+
+</project>
