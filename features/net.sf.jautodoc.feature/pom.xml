@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.hazendaz.jautodoc</groupId>
+        <artifactId>jautodoc-parent</artifactId>
+        <version>1.15.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.github.hazendaz.jautodoc</groupId>
+    <artifactId>jautodoc-feature</artifactId>
+    <version>1.15.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>jautodoc-feature</name>
+    <description>Provides support for writing Javadoc.</description>
+
+    <scm>
+        <url>https://github.com/hazendaz/jautodoc</url>
+        <connection>scm:git:ssh://github.com/hazendaz/jautodoc.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/hazendaz/jautodoc.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <!-- TODO -->
+    </properties>
+
+    <dependencies>
+        <!-- TODO -->
+    </dependencies>
+
+</project>
