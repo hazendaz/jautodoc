@@ -7,6 +7,7 @@
  *******************************************************************/
 package net.sf.jautodoc.source;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,6 +37,7 @@ public abstract class AbstractSourceProcessor {
     protected IScanner commentScanner;
 
     protected final ICompilationUnit compUnit;
+    protected File file;
     protected final Configuration  config;
     protected final JavadocCreator javadocCreator;
 
@@ -46,6 +48,13 @@ public abstract class AbstractSourceProcessor {
     protected AbstractSourceProcessor(final ICompilationUnit compUnit, final Configuration config) {
         this.config = config == null ? ConfigurationManager.getConfiguration(compUnit) : config;
         this.compUnit = compUnit;
+        this.javadocCreator = new JavadocCreator(this.config);
+    }
+
+    protected AbstractSourceProcessor(final File compUnit, final Configuration config) {
+        this.config = config;
+        this.compUnit = null;
+        this.file = compUnit;
         this.javadocCreator = new JavadocCreator(this.config);
     }
 
@@ -96,6 +105,14 @@ public abstract class AbstractSourceProcessor {
         } finally {
             manager.disconnect(path, LocationKind.NORMALIZE, null);
         }
+    }
+
+    protected void doProcessing() throws Exception {
+        startProcessing();
+        processFileHeader();
+        // processTodoForAutodoc(members);
+        // processMembers(SourceUtils.sortMembers(members), monitor);
+        stopProcessing();
     }
 
     protected abstract void startProcessing() throws Exception;
