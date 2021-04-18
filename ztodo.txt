@@ -1,0 +1,9 @@
+'develop' is my original work
+
+'master' is a rebase from upstream and all applied but the initial poms.  Those are at 20607b78a877fa2ac2dab899a3a2fb39be6a052d
+
+Get the initial pom setup and then start testing build of project and work out any issues.
+
+temp is more work to work with Eclipse components directly instead of relying on ide.
+
+This was never working, probably still doesn't, WIP highly.
