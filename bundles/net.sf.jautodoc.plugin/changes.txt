@@ -1,5 +1,8 @@
 Changes for JAutodoc
 
+* 2021-04-18 Version 1.15.1
+      o Full project mavenized
+
 * 2020-07-12 Version 1.15.0
       o Clean Up and Save Action for Javadoc
       o Use field comments on constructor parameters
