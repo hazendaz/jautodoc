@@ -1,5 +1,8 @@
 Changes for JAutodoc
 
+* 2023-12-30 Version 1.16.1
+      o Full project mavenized
+
 * 2023-12-29 Version 1.16.0
       o Support for records
       o Ignore Lombok generated code
