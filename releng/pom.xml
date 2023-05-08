@@ -13,6 +13,7 @@
 	</parent>
 
 	<modules>
-		<module>net.sf.jautodoc.update</module>
+        <module>net.sf.jautodoc.configuration</module>
+        <module>net.sf.jautodoc.update</module>
 	</modules>
 </project>
