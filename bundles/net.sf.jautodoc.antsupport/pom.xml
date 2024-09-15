@@ -24,7 +24,7 @@
     </scm>
 
     <properties>
-        <ant.version>1.10.14</ant.version>
+        <ant.version>1.10.15</ant.version>
         <antcore.version>3.7.200</antcore.version>
         <jdt.version>3.36.0</jdt.version>
         <swt.version>3.124.200</swt.version>
