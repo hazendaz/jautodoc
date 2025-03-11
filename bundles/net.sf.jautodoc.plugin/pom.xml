@@ -27,7 +27,7 @@
         <jdt.version>3.40.0</jdt.version>
         <jface.version>3.35.100</jface.version>
         <junit.version>5.12.0</junit.version>
-        <swt.version>3.128.0</swt.version>
+        <swt.version>3.129.0</swt.version>
         <velocity.version>1.7</velocity.version>
         <xml-writer.version>0.2</xml-writer.version>
     </properties>
