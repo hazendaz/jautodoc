@@ -25,7 +25,7 @@
 
     <properties>
         <ant.version>1.10.15</ant.version>
-        <antcore.version>3.7.500</antcore.version>
+        <antcore.version>3.7.600</antcore.version>
         <jdt.version>3.40.0</jdt.version>
         <swt.version>3.128.0</swt.version>
     </properties>
