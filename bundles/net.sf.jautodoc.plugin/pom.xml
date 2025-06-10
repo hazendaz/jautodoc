@@ -24,7 +24,7 @@
     </scm>
 
     <properties>
-        <jdt.version>3.41.0</jdt.version>
+        <jdt.version>3.42.0</jdt.version>
         <jface.version>3.37.0</jface.version>
         <junit.version>5.13.1</junit.version>
         <swt.version>3.130.0</swt.version>
