@@ -1,18 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<artifactId>net.sf.jautodoc.features</artifactId>
-	<packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>net.sf.jautodoc</groupId>
-		<artifactId>net.sf.jautodoc.root</artifactId>
-		<version>1.17.1</version>
-	</parent>
+    <parent>
+        <groupId>com.github.hazendaz.jautodoc</groupId>
+        <artifactId>net.sf.jautodoc.root</artifactId>
+        <version>1.17.2-SNAPSHOT</version>
+    </parent>
 
-	<modules>
-		<module>net.sf.jautodoc.feature</module>
-	</modules>
+    <groupId>com.github.hazendaz.jautodoc</groupId>
+    <artifactId>net.sf.jautodoc.features</artifactId>
+    <version>1.17.2-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>net.sf.jautodoc.feature</module>
+    </modules>
 </project>

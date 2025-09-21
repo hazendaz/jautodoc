@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.hazendaz.jautodoc</groupId>
+        <artifactId>net.sf.jautodoc.bundles</artifactId>
+        <version>1.17.2-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.github.hazendaz.jautodoc</groupId>
+    <artifactId>jautodoc-velocity</artifactId>
+    <version>1.17.2-SNAPSHOT</version>
+
+    <name>jautodoc-velocity</name>
+    <description>Provides support for writing Javadoc Velocity Integration.</description>
+
+    <scm>
+        <url>https://github.com/hazendaz/jautodoc</url>
+        <connection>scm:git:ssh://github.com/hazendaz/jautodoc.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/hazendaz/jautodoc.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <!-- External Modules -->
+        <velocity.version>1.7</velocity.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
