@@ -29,32 +29,25 @@ public class VelocityLogChuteProxy implements LogChute {
 		delegate = logChute;
 	}
 
-	/* (non-Javadoc)
-	 * @see org.apache.velocity.runtime.log.LogChute#init(org.apache.velocity.runtime.RuntimeServices)
-	 */
+	@Override
 	public void init(RuntimeServices rs) throws Exception {
 		delegate.init(rs);
 	}
 
-	/* (non-Javadoc)
-	 * @see org.apache.velocity.runtime.log.LogChute#isLevelEnabled(int)
-	 */
+	@Override
 	public boolean isLevelEnabled(int level) {
 		return delegate.isLevelEnabled(level);
 	}
 
-	/* (non-Javadoc)
-	 * @see org.apache.velocity.runtime.log.LogChute#log(int, java.lang.String)
-	 */
+	@Override
 	public void log(int level, String message) {
 		delegate.log(level, message);
 
 	}
 
-	/* (non-Javadoc)
-	 * @see org.apache.velocity.runtime.log.LogChute#log(int, java.lang.String, java.lang.Throwable)
-	 */
+	@Override
 	public void log(int level, String message, Throwable throwable) {
 		delegate.log(level, message, throwable);
 	}
+
 }

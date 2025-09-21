@@ -7,6 +7,7 @@
  *******************************************************************/
 package net.sf.jautodoc.source;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -65,6 +66,16 @@ public class SourceManipulator extends AbstractSourceProcessor {
     }
 
     /**
+     * Instantiates a new source manipulator.
+     *
+     * @param compUnit the compilation unit
+     * @param config the configuration to use
+     */
+    public SourceManipulator(File compUnit, Configuration  config) {
+        super(compUnit, config);
+    }
+
+    /**
      * Adds javadoc for all members of the assigned compilation unit.
      *
      * @param monitor the progress monitor
@@ -83,6 +94,16 @@ public class SourceManipulator extends AbstractSourceProcessor {
      */
     public void addJavadoc(IMember[] members, IProgressMonitor monitor) throws Exception {
         doProcessing(members, monitor);
+    }
+
+    /**
+     * Adds javadoc for all members of the assigned compilation unit.
+     *
+     * @param monitor the progress monitor
+     * @throws Exception exception occured
+     */
+    public void addJavadoc() throws Exception {
+        doProcessing();
     }
 
     /**

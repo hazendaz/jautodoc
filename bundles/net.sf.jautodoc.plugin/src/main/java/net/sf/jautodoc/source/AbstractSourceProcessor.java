@@ -7,6 +7,7 @@
  *******************************************************************/
 package net.sf.jautodoc.source;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -40,6 +41,7 @@ public abstract class AbstractSourceProcessor {
     protected boolean markdownEnabled;
 
     protected final ICompilationUnit compUnit;
+    protected File file;
     protected final Configuration  config;
     protected final JavadocCreator javadocCreator;
 
@@ -50,6 +52,13 @@ public abstract class AbstractSourceProcessor {
     protected AbstractSourceProcessor(final ICompilationUnit compUnit, final Configuration config) {
         this.config = config == null ? ConfigurationManager.getConfiguration(compUnit) : config;
         this.compUnit = compUnit;
+        this.javadocCreator = new JavadocCreator(this.config);
+    }
+
+    protected AbstractSourceProcessor(final File compUnit, final Configuration config) {
+        this.config = config;
+        this.compUnit = null;
+        this.file = compUnit;
         this.javadocCreator = new JavadocCreator(this.config);
     }
 
