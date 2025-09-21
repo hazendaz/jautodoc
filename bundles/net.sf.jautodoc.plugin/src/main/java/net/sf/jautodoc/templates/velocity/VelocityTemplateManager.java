@@ -52,7 +52,7 @@ public class VelocityTemplateManager extends AbstractTemplateManager {
 	 */
 	public void validateTemplate(String template) throws ValidationException, Exception {
 		try {
-			RuntimeSingleton.parse(new StringReader(template), "TemplateValidation");
+			RuntimeSingleton.parse(new StringReader(template), RuntimeSingleton.getTemplate("TemplateValidation"));
 		} catch (ParseException pe) {
 			if (pe.currentToken != null && pe.currentToken.next != null) {
 				throw new ValidationException(pe,
