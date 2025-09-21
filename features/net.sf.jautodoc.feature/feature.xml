@@ -225,8 +225,4 @@ litigation.
          id="net.sf.jautodoc"
          version="0.0.0"/>
 
-   <plugin
-         id="net.sf.jautodoc.velocity"
-         version="0.0.0"/>
-
 </feature>

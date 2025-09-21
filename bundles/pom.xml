@@ -18,6 +18,5 @@
     <modules>
         <module>net.sf.jautodoc.antsupport</module>
         <module>net.sf.jautodoc.plugin</module>
-        <module>net.sf.jautodoc.velocity</module>
     </modules>
 </project>

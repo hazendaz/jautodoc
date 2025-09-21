@@ -29,8 +29,9 @@
         <jdt.ui.version>3.35.100</jdt.ui.version>
         <jface.version>3.38.0</jface.version>
         <junit.version>5.13.4</junit.version>
+        <slf4j.version>2.0.17</slf4j.version>
         <swt.version>3.131.0</swt.version>
-        <velocity.version>1.7</velocity.version>
+        <velocity.version>2.4.1</velocity.version>
         <xml-writer.version>0.2</xml-writer.version>
     </properties>
 
@@ -118,9 +119,21 @@
         </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity</artifactId>
+            <artifactId>velocity-engine-core</artifactId>
             <version>${velocity.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.megginson.sax</groupId>
