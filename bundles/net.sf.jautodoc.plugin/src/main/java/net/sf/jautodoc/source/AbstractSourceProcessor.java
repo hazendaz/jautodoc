@@ -117,6 +117,14 @@ public abstract class AbstractSourceProcessor {
         }
     }
 
+    protected void doProcessing() throws Exception {
+        startProcessing();
+        processFileHeader();
+        // processTodoForAutodoc(members);
+        // processMembers(SourceUtils.sortMembers(members), monitor);
+        stopProcessing();
+    }
+
     private String getSourceLevel() {
         return Optional.ofNullable(compUnit.getJavaProject())
                 .map(jp -> jp.getOption(JavaCore.COMPILER_SOURCE, true))
