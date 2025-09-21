@@ -36,14 +36,6 @@
     </properties>
 
     <dependencies>
-        <!-- Internal Modules -->
-        <dependency>
-            <groupId>com.github.hazendaz.jautodoc</groupId>
-            <artifactId>jautodoc-velocity</artifactId>
-            <version>${project.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
         <!-- External Modules -->
         <dependency>
             <groupId>jakarta.xml.bind</groupId>

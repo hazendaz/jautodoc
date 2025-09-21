@@ -20,7 +20,6 @@ import net.sf.jautodoc.templates.ValidationException;
 import net.sf.jautodoc.templates.wrapper.DateWrapper;
 import net.sf.jautodoc.templates.wrapper.JavaElementWrapper;
 import net.sf.jautodoc.templates.wrapper.PropertyWrapper;
-import net.sf.jautodoc.velocity.log.VelocityLogChuteProxy;
 
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
@@ -167,8 +166,6 @@ public class VelocityTemplateManager extends AbstractTemplateManager {
 		final ClassLoader cl = Thread.currentThread().getContextClassLoader();
 		try {
 		    Thread.currentThread().setContextClassLoader(getClass().getClassLoader());
-
-		    VelocityLogChuteProxy.setLogChute(new VelocityLogger());
 
             final Properties velProps = new Properties();
             velProps.load(getClass().getResourceAsStream("velocity.properties"));
