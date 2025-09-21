@@ -7,8 +7,8 @@
  *******************************************************************/
 package net.sf.jautodoc.preferences.replacements;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlValue;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlValue;
 
 import net.sf.jautodoc.preferences.Constants;
 import net.sf.jautodoc.preferences.ITableEntry;
