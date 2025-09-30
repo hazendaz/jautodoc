@@ -28,7 +28,7 @@
         <jdt.version>3.43.0</jdt.version>
         <jdt.ui.version>3.35.100</jdt.ui.version>
         <jface.version>3.38.0</jface.version>
-        <junit.version>5.13.4</junit.version>
+        <junit.version>5.14.0</junit.version>
         <slf4j.version>2.0.17</slf4j.version>
         <swt.version>3.131.0</swt.version>
         <velocity.version>2.4.1</velocity.version>
