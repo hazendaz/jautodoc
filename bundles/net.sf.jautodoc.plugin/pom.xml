@@ -30,7 +30,7 @@
         <jface.version>3.38.100</jface.version>
         <junit.version>6.0.1</junit.version>
         <slf4j.version>2.0.17</slf4j.version>
-        <swt.version>3.131.0</swt.version>
+        <swt.version>3.132.0</swt.version>
         <velocity.version>2.4.1</velocity.version>
         <xml-writer.version>0.2</xml-writer.version>
     </properties>
