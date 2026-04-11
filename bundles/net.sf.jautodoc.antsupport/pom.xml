@@ -25,7 +25,7 @@
     </scm>
 
     <properties>
-        <ant.version>1.10.15</ant.version>
+        <ant.version>1.10.17</ant.version>
         <antcore.version>3.7.800</antcore.version>
         <jdt.version>3.45.0</jdt.version>
         <jdt.ui.version>3.37.0</jdt.ui.version>
