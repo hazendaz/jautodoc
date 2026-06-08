@@ -27,7 +27,7 @@
     <properties>
         <jdt.version>3.45.0</jdt.version>
         <jdt.ui.version>3.37.0</jdt.ui.version>
-        <jface.version>3.39.0</jface.version>
+        <jface.version>3.39.100</jface.version>
         <junit.version>6.1.0</junit.version>
         <slf4j.version>2.0.18</slf4j.version>
         <swt.version>3.133.0</swt.version>
