@@ -29,7 +29,7 @@
         <antcore.version>3.7.1000</antcore.version>
         <jdt.version>3.47.0</jdt.version>
         <jdt.ui.version>3.39.0</jdt.ui.version>
-        <swt.version>3.134.0</swt.version>
+        <swt.version>3.135.0</swt.version>
     </properties>
 
     <dependencies>
